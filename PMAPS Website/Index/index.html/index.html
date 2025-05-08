@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perinatal M.A.P.S.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <img src="../../Images/Website-horizontal-PMAPS-Logo-v2.png" alt="Perinatal M.A.P.S. Logo" class="logo"/>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#journey">Resources</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#university">Education</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#shop">Shop/Trade</a></li>
+  </ul>
+</nav>
+
+<ul class="mobile-nav-links" id="mobileMenu">
+  <li><a href="#">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#journey">Resources</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#university">Education</a></li>
+  <li><a href="#blog">Blog</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#shop">Shop/Trade</a></li>
+</ul>
+
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="../../images/beach-video-clip.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay">
+    <div class="hero-content">
+      <h1>Start Your Journey With Perinatal M.A.P.S.</h1>
+      <p>Maternal Advocacy & Postpartum Support from Preconception to Early Childhood</p>
+      <div class="cta-buttons">
+        <a href="#journey" class="button outline">Explore the 7 Stops</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+  <div class="about-wrapper">
+    <div class="about-text">
+      <h2>What is Perinatal M.A.P.S.?</h2>
+      <p>Perinatal M.A.P.S. stands for Maternal Advocacy & Postpartum Support. We walk with you through every phase of the perinatal journey—offering education, emotional care, and practical support from your first spark of hope to early childhood milestones.</p>
+    </div>
+    <div class="about-image">
+      <img src="shoreline.jpg" alt="Butterfly gently landing on a shoreline path" />
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY SECTION -->
+<section id="journey" class="journey">
+  <h2>The 7 Milestone Stops</h2>
+  <p>Where are you in your journey?</p>
+  <div class="journey-scroll">
+    <div class="stop">Preconception</div>
+    <div class="stop">Pregnancy</div>
+    <div class="stop">Labor & Birth</div>
+    <div class="stop">Postpartum</div>
+    <div class="stop">Infanthood (0-12 mo)</div>
+    <div class="stop">Toddlerhood (1-2 yrs)</div>
+    <div class="stop">Early Childhood (3-5 yrs)</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 Perinatal M.A.P.S. | Maternal Advocacy & Postpartum Support</p>
+  <p>Email us: perinatalmaps@gmail.com | Send us a Message: 844-338-9791 | Call us: 336-355-7155</p> 
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    if (menu.style.display === "flex") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "flex";
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+
+/* Brand Colors */
+:root {
+    --navy: #060644;
+    --green: #006400;
+    --lavender: #C5B4D4;
+    --sand: #EFE9E1;
+    --text-dark: #060644;
+    --text-light: #fff;
+    --font-primary: 'Noto Serif', serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-primary);
+    background-color: var(--sand);
+    color: var(--text-dark);
+  }
+  
+  nav.navbar {
+    background-color: var(--navy);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    height: 125px;
+    width: 395px;
+  }
+
+  
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background: url('sand_background.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero .overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--navy);
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    color: var(--green);
+    margin-bottom: 2rem;
+  }
+
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  .hero .overlay {
+    background: rgba(239, 233, 225, 0.7);
+    z-index: 1;
+    position: relative;
+  }
+  
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--lavender);
+    color: var(--text-dark);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  
+  .button.outline {
+    background-color: transparent;
+    border: 2px solid var(--navy);
+  }
+  
+  .about {
+    padding: 4rem 2rem;
+    background-color: var(--sand);
+  }
+  
+  .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-text {
+    flex: 1 1 400px;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .journey {
+    background-color: var(--lavender);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .journey-scroll {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .stop {
+    background-color: var(--green);
+    color: var(--text-light);
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 150px;
+  }
+  
+  .footer {
+    background-color: var(--navy);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    border-radius: 2px;
+  }
+  
+  /* Hide mobile menu by default */
+.mobile-nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: var(--navy);
+  padding: 1rem;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  border-radius: 6px;
+  z-index: 99;
+}
+
+.mobile-nav-links a {
+  color: var(--text-light);
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+/* Hamburger icon styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Show hamburger and hide desktop nav on small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
