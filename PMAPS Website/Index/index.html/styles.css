@@ -23,14 +23,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+  flex-direction: row;
   }
   
   .navbar .logo {
-    height: 125px;
-    width: 395px;
+    height: 100px;
+    width: 300px;
   }
-
-  
   
   .navbar .nav-links {
     list-style: none;
@@ -47,7 +47,7 @@
   .hero {
     background: url('sand_background.jpg') no-repeat center center/cover;
     position: relative;
-    height: 90vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +63,7 @@
     justify-content: center;
     z-index: 1;
     position: relative;
+    padding-top: 0;
   }
   
   .hero-content h1 {
@@ -197,16 +198,24 @@
   background-color: var(--navy);
   padding: 1rem;
   position: absolute;
-  top: 70px;
-  right: 20px;
-  border-radius: 6px;
-  z-index: 99;
+  top: 100px;
+  left: 0;
+  right: 0px;
+  border-radius: 0px;
+  z-index: 999;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .mobile-nav-links a {
   color: var(--text-light);
   padding: 0.5rem 0;
   text-decoration: none;
+}
+
+.navbar, .mobile-nav-links {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Hamburger icon styling */
@@ -233,4 +242,14 @@
   .hamburger {
     display: flex;
   }
+
+  .mobile-nav-links.open {
+    display: flex;
+  }
+
+
+body, html {
+  overflow-x: hidden;
+  max-width: 100%;
 }
+
