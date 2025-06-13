@@ -230,6 +230,10 @@
     display: flex;
   }
 
+  .mobile-nv-inks {
+    display: none;
+  }
+
   .mobile-nav-links.open {
     display: flex;
   }

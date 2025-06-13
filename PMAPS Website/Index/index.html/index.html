@@ -15,9 +15,7 @@
   <img src="../../Images/Website-horizontal-PMAPS-Logo-v3.png" alt="Perinatal M.A.P.S. Logo" class="logo"/>
 
   <div class="hamburger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span></span><span></span><span></span>
   </div>
   
   <ul class="nav-links">
@@ -30,7 +28,7 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#shop">Shop/Trade</a></li>
   </ul>
-
+</nav>
 
 <ul class="mobile-nav-links" id="mobileMenu">
   <li><a href="#">Home</a></li>
@@ -42,7 +40,7 @@
   <li><a href="#contact">Contact</a></li>
   <li><a href="#shop">Shop/Trade</a></li>
 </ul>
-</nav>
+
 
 
 <!-- HERO SECTION -->
@@ -102,6 +100,16 @@
     const menu = document.getElementById("mobileMenu");
     menu.classList.toggle("open");
   }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-nav-links");
+
+    hamburger.addEventListener("click", function () {
+      mobileMenu.classList.toggle("open");
+    });
+  });
 </script>
 
 </body>
