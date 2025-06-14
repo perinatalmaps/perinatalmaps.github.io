@@ -32,7 +32,13 @@
     width: 300px;
   }
   
-  .navbar .nav-links {
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -220,6 +226,10 @@
   border-radius: 2px;
 }
 
+.mobile-nav-links.open {
+  display: flex;
+}
+
 /* Show hamburger and hide desktop nav on small screens */
 @media (max-width: 768px) {
   .nav-links {
@@ -229,20 +239,15 @@
   .hamburger {
     display: flex;
   }
+}
+
+@media (min-width: 769px){
+  .nav-links{
+    display: flex;
+  }
 
   .mobile-nav-links {
     display: none;
-  }
-
-  .mobile-nav-links.open {
-    display: flex;
-  }
-
-}
-
-@media (min-width: 768px){
-  .nav-links{
-    display: flex;
   }
 }
 

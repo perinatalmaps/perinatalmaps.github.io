@@ -98,18 +98,25 @@
 <script>
   function toggleMenu() {
     const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("open");
+    //menu.classList.toggle("open");
+
+    if (menu.style.display === "flex"){
+      menu.style.display = "none";
+    }
+    else {
+      menu.style.display = "flex";
+    }
   }
 </script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  /*document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.querySelector(".hamburger");
     const mobileMenu = document.querySelector(".mobile-nav-links");
 
     hamburger.addEventListener("click", function () {
       mobileMenu.classList.toggle("open");
     });
-  });
+  });*/
 </script>
 
 </body>
