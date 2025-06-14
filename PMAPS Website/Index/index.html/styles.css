@@ -240,6 +240,12 @@
   .hamburger {
     display: flex;
   }
+
+  .navbar .logo{
+    width: 180px;
+    height: auto;
+    
+  }
 }
 
 @media (min-width: 769px){
