@@ -217,6 +217,7 @@
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  margin-left: auto;
 }
 
 .hamburger span {
